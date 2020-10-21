@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
         pp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Uri myUri1 = Uri.parse("file://"+"downloadedMusic"+id+".mp3");
+                Uri myUri1 = Uri.parse("file://musicdownloaded/"+"downloadedMusic"+id+".mp3");
                 if (downloaded){
                     if(mediaPlayer.isPlaying()) mediaPlayer.pause();
                     else{
